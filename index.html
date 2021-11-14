@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trouble Bubble</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(83, 201, 201), #c7da00);
+        }
+
+        section {
+            margin: 120px 0;
+        }
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            color: blue;
+            margin: auto;
+            width: 80%;
+            font-family: "Brush Script MT";
+        }
+
+        h2 {
+            font-weight: 900;
+            font-size: 34px;
+            line-height: 48px;
+            margin: 0;
+            text-align: center;
+            color: black;
+            padding: 0 0 24px;
+            font-family: "Brush Script MT";
+        }
+
+        p {
+            padding: 15px;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            margin: auto;
+            width: 30%;
+            font-family: "Brush Script MT";
+            border-radius: 25px;
+            background-color: lightgrey;
+            box-shadow: 10px 5px 5px lightblue;
+        }
+
+        button {
+            border-radius: 25px;
+            margin: 0 auto;
+            display: block;
+            background-color: black;
+            border: 1px solid black;
+            color: white;
+            font-size: 16px;
+            font-family: "Brush Script MT";
+            line-height: 22px;
+            padding: 16px 24px;
+            text-decoration: none;
+            transition: all 200ms ease;
+            box-shadow: 10px 5px 5px lightblue;
+        }
+
+        button:hover {
+            color: white;
+            background: grey;
+        }
+
+
+        div {
+            background: linear-gradient(rgb(83, 201, 201), #c7da00);
+            margin: 0;
+            text-align: center;
+            padding: 0 0 30px;
+            font-family: "Brush Script MT";
+        }
+
+        a {
+            margin: 0;
+            text-align: center;
+            padding: 0 0 24px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>
+            Trouble Bubble
+        </h1>
+        <hr>
+        <h2>
+            Share your troubles
+        </h2>
+        </br>
+        <div>
+            <img src="C:\Users\Chelsea\Desktop\Trouble Bubble\Phonetemplate.png"
+                alt="Welcoming Panda" width="300" height="550">
+            <p>
+               Trouble Bubble will help you release your stress, share your troubles, and make you trouble-free again!
+                <br />
+                <strong>
+                    <em>
+                        Join the Trouble Community! <span style="color:blue"></span>
+                    </em>
+                </strong>
+            </p>
+        </div>
+        <br />
+        <button>
+            Sign up!
+        </button>
+        <a href="https://www.instagram.com/chelseaz_dz/" target="_blank"> Learn More </a>
+    </section>
+    <script>
+        function welcome() {
+            let name = prompt("Hi! What would you like to be called?");
+            let like = prompt("Will you respect everyone's trouble on the app?")
+            let h1 = document.querySelector("h1");
+            if (like.toLowerCase() == "no") {
+                h1.innerHTML = "Sorry, you can't register for this app";
+                alert("Sorry " + name + "! ou can't register for this app if you won't respect everyone on the app")
+            }
+            else {
+                let email = prompt("Type your email")
+                h1.innerHTML = "We hope you can have a comforting experience";
+                alert("Hi " + name + "! Welcome to Trouble Bubble!!! Fill in your first bubble by clicking on the bubble!" )
+            }
+        }
+
+        let promptingbutton = document.querySelector("button");
+        promptingbutton.addEventListener("click", welcome);
+    </script>
+</body>
+
+</html>
